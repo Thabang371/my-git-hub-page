@@ -80,4 +80,25 @@ main a[href^="mailto:"] {
 .get-btn:hover {
 	background-color: white;
 }
+.top-nav{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+}
+
+.top-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.top-nav a:hover{
+    color:silver;
+    border-bottom:2px solid silver;
+}
 
