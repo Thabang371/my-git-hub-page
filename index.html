@@ -4,132 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes-Benz</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #121212;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        section {
-            background: white;
-            margin: 30px 0;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .car-image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            margin: 15px auto;
-            display: block;
-            border-radius: 10px;
-        }
-        h2 {
-            margin-top: 10px;
-        }
-        p {
-            color: #555;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-    </style>
-    </head>
-    <body>
-    <header>
-    <h1>Welcome to Mercedes-Benz</h1>
-        <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <h2 class="logo">Mercedes-Benz</h2>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Cars</a>
+        <a href="#">Contact</a>
+    </div>
 </nav>
-    </header>
-    <main>
-    <section id="luxury">
-    <h2>Luxury</h2>
-    <p>
-            Mercedes-Benz is known worldwide for luxury vehicles that offer
-            premium comfort, elegant design, and high-quality materials.
-    </p>
-    <img src="https://inkythuatso.com/uploads/images/2021/11/logo-mercedes-inkythuatso-3-01-11-09-10-56.jpg" 
-             alt="Mercedes Logo" class="car-image">
-    <button class="get-btn">Explore Model</button>
-    </section>
-    <section id="performance">
-    <h2>Performance</h2>
-    <p>
-            The Mercedes-Benz E-Class delivers powerful performance with smooth
-            handling, advanced engines, and an exciting driving experience.
-    </p>
-    <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-108-665e31f53f6cc.jpg?crop=1xw:1xh;center,top" 
-             class="car-image">
-    <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-117-665e31f7dfb5e.jpg?crop=1xw:1xh;center,top" 
-             class="car-image">
-    <button class="get-btn">Explore Model</button>
-    </section>
-    <section id="innovation">
-        <h2>Innovation</h2>
-        <p>
-            Mercedes-AMG models like the C63 combine cutting-edge technology
-            with motorsport engineering, featuring powerful V8 engines and
-            advanced aerodynamics.
-        </p>
-        <img src="https://cdn.motor1.com/images/mgl/nAylQR/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" 
-             class="car-image">
-        <img src="https://cdn.motor1.com/images/mgl/wl38Qm/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" 
-             class="car-image">
-        <button class="get-btn">Explore Model</button>
-    </section>
-
-    <section>
-        <p>
-            Learn more about coding on 
-            <a href="https://github.com" target="_blank">GitHub</a>.
-        </p>
-    </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Thabang Lejowa</p>
-    </footer>
-<script>
-function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-}
-
-function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-}
-</script>
-    </body>
-    </html>
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="Car">
+        </div>
+        <div class="hero-text">
+            <h1>Timeless Design,<br>Premium Performance</h1>
+            <p>Experience luxury driving with cutting-edge innovation and unmatched comfort.</p>
+            <div class="buttons">
+                <button class="btn primary">Explore Cars</button>
+                <button class="btn secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cards">
+    <div class="card">
+        <h3>Luxury</h3>
+        <p>Premium comfort and elegant interiors.</p>
+    </div>
+    <div class="card">
+        <h3>Performance</h3>
+        <p>Powerful engines with smooth handling.</p>
+    </div>
+    <div class="card">
+        <h3>Innovation</h3>
+        <p>Advanced technology for the future.</p>
+    </div>
+</section>
+</body>
+</html>
