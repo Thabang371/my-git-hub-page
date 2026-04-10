@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes-Benz</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f4f4;
-            color: #f5f0f0;
+            color: #333;
         }
+
         header {
             background-color: #121212;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         main {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
-        h2 {
-            margin-top: 40px;
+
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
         }
+
+        /* 🔧 FIXED IMAGE SIZE */
         .car-image {
             width: 100%;
-            max-width: 800px;
+            max-width: 400px;
+            height: auto;
+            margin: 15px auto;
             display: block;
-            margin: 20px auto;
             border-radius: 10px;
         }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+
         footer {
             background-color: #000;
             color: #fff;
@@ -40,70 +69,69 @@
             padding: 10px;
             margin-top: 40px;
         }
-        a {
-            color: #0a58ca;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
-
-	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
 <header>
     <h1>Welcome to Mercedes-Benz</h1>
-	<nav class="top-nav">
-    <a href="#luxury">Luxury</a>
-    <a href="#performance">Performance</a>
-    <a href="#innovation">Innovation</a>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About</a> | 
-            <a href="contact.html">Contact</a> 
-        </nav> 
-    </header> 
-    </main> 
-    </footer> 
-</body> 
-</html> 
-	
+    <nav>
+        <a href="#luxury">Luxury</a>
+        <a href="#performance">Performance</a>
+        <a href="#innovation">Innovation</a>
+    </nav>
 </header>
+
 <main>
-    <p>
-        Mercedes-Benz is a global automobile brand known for luxury,
-        performance, and cutting edge technology.
-    </p>
-    <h2>Featured Vehicle</h2>
-    <img
-        src="https://inkythuatso.com/uploads/images/2021/11/logo-mercedes-inkythuatso-3-01-11-09-10-56.jpg" alt="Mercedes-Benz"
-        class="car-image"
-    >
-    <p>
-        Experience the future of driving with the new Mercedes-Benz E-Class.
-        Comfort, safety, and style all in one.
-	<img
-		src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-108-665e31f53f6cc.jpg?crop=1xw:1xh;center,top" alt="Mercedes-Benz 2026 E-Class"
-		class="car-image">
-	<img
-		src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-117-665e31f7dfb5e.jpg?crop=1xw:1xh;center,top" alt="Mercedes-Benz 2026 E-Class"
-		class="car-image">	
-    </p>
-		Experience the final special edition with the performmaster C63 AMG with 4.0-liter V8 biturbo including performance optimization and the exclusive optics and aerodynamics package.
-	<img
-		src="https://cdn.motor1.com/images/mgl/nAylQR/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" alt="Mercedes-Benz 2026 E-Class"
-		class="car-image">	
-	<img
-		src="https://cdn.motor1.com/images/mgl/wl38Qm/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" alt="Mercedes-Benz 2026 E-Class"
-		class="car-image">
-    <p>
-        Learn more about coding on
-        <a href="https://github.com" target="_blank">GitHub</a>.
-    </p>
+
+    <section id="luxury">
+        <h2>Luxury</h2>
+        <p>
+            Mercedes-Benz is known worldwide for luxury vehicles that offer
+            premium comfort, elegant design, and high-quality materials.
+        </p>
+        <img src="https://inkythuatso.com/uploads/images/2021/11/logo-mercedes-inkythuatso-3-01-11-09-10-56.jpg" 
+             alt="Mercedes Logo" class="car-image">
+    </section>
+
+    <section id="performance">
+        <h2>Performance</h2>
+        <p>
+            The Mercedes-Benz E-Class delivers powerful performance with smooth
+            handling, advanced engines, and an exciting driving experience.
+        </p>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-108-665e31f53f6cc.jpg?crop=1xw:1xh;center,top" 
+             class="car-image">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-e350-117-665e31f7dfb5e.jpg?crop=1xw:1xh;center,top" 
+             class="car-image">
+    </section>
+
+    <section id="innovation">
+        <h2>Innovation</h2>
+        <p>
+            Mercedes-AMG models like the C63 combine cutting-edge technology
+            with motorsport engineering, featuring powerful V8 engines and
+            advanced aerodynamics.
+        </p>
+        <img src="https://cdn.motor1.com/images/mgl/nAylQR/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" 
+             class="car-image">
+        <img src="https://cdn.motor1.com/images/mgl/wl38Qm/s1/mercedes-amg-c-63-s-e-performance-2023-f1-edition.jpg" 
+             class="car-image">
+    </section>
+
+    <section>
+        <p>
+            Learn more about coding on 
+            <a href="https://github.com" target="_blank">GitHub</a>.
+        </p>
+    </section>
+
 </main>
+
 <footer>
     <p>&copy; 2026 Thabang Lejowa</p>
 </footer>
+
 </body>
 </html>
-<link rel="stylesheet" href="styles.css"> 
