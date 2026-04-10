@@ -177,8 +177,32 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown-content a:hover {
     background: silver;
     color: black;
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: black;
+    padding: 10px;
+}
+.mobile-menu.active {
+    display: flex;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
 }
