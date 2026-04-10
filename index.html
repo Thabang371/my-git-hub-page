@@ -65,28 +65,34 @@
     <body>
     <header>
     <h1>Welcome to Mercedes-Benz</h1>
+    <nav>
     <nav class="navbar">
-    <a href="#luxury">Luxury</a>
-    <a href="#performance">Performance</a>
-    <a href="#innovation">Innovation</a>
-    <div class="nav-item dropdown">
-    <a href="#">About ▾</a>
-    <div class="dropdown-content">
-    <a href="about.html">Our Story</a>
-    <a href="about.html#team">Team</a>
+    <div class="nav-links">
+        <a href="#luxury">Luxury</a>
+        <a href="#performance">Performance</a>
+        <a href="#innovation">Innovation</a>
+        <div class="nav-item dropdown">
+            <a href="#">About ▾</a>
+            <div class="dropdown-content">
+                <a href="about.html">Our Story</a>
+                <a href="about.html#team">Team</a>
+            </div>
+        </div>
+        <div class="nav-item dropdown">
+            <a href="#">Contact ▾</a>
+            <div class="dropdown-content">
+                <a href="contact.html">Contact Form</a>
+                <a href="contact.html#location">Location</a>
+            </div>
         </div>
     </div>
-    <div class="nav-item dropdown">
-        <a href="#">Contact ▾</a>
-        <div class="dropdown-content">
-            <a href="contact.html">Contact Form</a>
-            <a href="contact.html#location">Location</a>
-        </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<nav id="mobileMenu" class="mobile-menu">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+<div id="mobileMenu" class="mobile-menu">
     <a href="#luxury">Luxury</a>
     <a href="#performance">Performance</a>
     <a href="#innovation">Innovation</a>
+
     <div class="dropdown">
         <button onclick="toggleDropdown('aboutMenu')">About ▾</button>
         <div id="aboutMenu" class="dropdown-content">
@@ -94,6 +100,7 @@
             <a href="about.html#team">Team</a>
         </div>
     </div>
+
     <div class="dropdown">
         <button onclick="toggleDropdown('contactMenu')">Contact ▾</button>
         <div id="contactMenu" class="dropdown-content">
@@ -101,9 +108,8 @@
             <a href="contact.html#location">Location</a>
         </div>
     </div>
-</nav>
-    </div>
-</nav>
+</div>
+    </nav>
     </header>
     <main>
     <section id="luxury">
