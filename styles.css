@@ -27,7 +27,6 @@ main {
 	padding: 20px;
 	max-width: 800px;
 	margin: 0 auto;
-
 }
 main img {
 	max-width: 100%;
@@ -87,7 +86,6 @@ main a[href^="mailto:"] {
     gap:40px;
     padding:15px;
 }
-
 .top-nav a{
     color:white;
     text-decoration:none;
@@ -96,9 +94,69 @@ main a[href^="mailto:"] {
     letter-spacing:1px;
     transition:0.3s;
 }
-
 .top-nav a:hover{
     color:silver;
     border-bottom:2px solid silver;
+}
+body {
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+    color: #e5e5e5;
+}
+header {
+    background: black;
+    border-bottom: 2px solid silver;
+}
+.top-nav a {
+    position: relative;
+}
+.top-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: silver;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.top-nav a:hover::after {
+    width: 100%;
+}
+section {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 0 15px rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(192,192,192,0.2);
+}
+img {
+    transition: 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+.get-btn {
+    background: linear-gradient(45deg, silver, #444);
+    color: black;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+.get-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+h1, h2 {
+    letter-spacing: 1px;
+}
+html {
+    scroll-behavior: smooth;
 }
 
