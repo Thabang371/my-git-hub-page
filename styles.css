@@ -144,3 +144,47 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: black;
+    padding: 15px;
+    flex-wrap: wrap; /* prevents breaking */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Dropdown fix */
+.nav-item {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #111;
+    min-width: 150px;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: silver;
+    color: black;
+}
