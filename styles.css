@@ -187,3 +187,44 @@ footer {
         height: auto;
     }
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+    .brand-box {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    .features-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    .cars-grid {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .car-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .social-container {
+        gap: 30px;
+    }
+    .social-item i {
+        font-size: 32px; 
+    }
+    main {
+        padding: 20px 5%;
+    }
+}
