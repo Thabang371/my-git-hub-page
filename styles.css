@@ -86,6 +86,27 @@ footer {
     font-weight: bold;
     letter-spacing: 2px;
 }
+.brand-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;           
+    margin-right: 40px;  
+}
+.nav-logo {
+    height: 40px;        
+    width: auto;
+    filter: brightness(0) invert(1); 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navbar h2 {
+    margin: 0; 
+    font-size: 1.5rem;
+    color: white;
+}
 @media (max-width: 768px) {
     .features-row {
         flex-direction: column;
