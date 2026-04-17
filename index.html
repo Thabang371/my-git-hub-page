@@ -3,49 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes-Benz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mercedes Featured Car</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1c; 
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #c5a059; 
+        }
+        nav {
+            font-size: 1.1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            opacity: 0.8;
+        }
+        nav a:hover {
+            opacity: 1;
+        }
+        .hero {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p.tagline {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.7;
+        }
+        .car-placeholder {
+            width: 80%;
+            height: 300px;
+            border: 1px dashed #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 50px;
+        }
+        .features-container {
+            display: flex;            
+            justify-content: center;  
+            gap: 50px;                
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 60px;
+        }
+        .feature-item {
+            flex: 1;              
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #bbb;
+            line-height: 1.4;
+        }
+        footer {
+            background-color: #d1d5db; 
+            color: #1a1a1c;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <h2>Mercedes-Benz</h2>
-        <div class="nav-links">
-            <a href="index.html">Home</a> |
-            <a href="cars.html">Cars</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Cars</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="hero">
+        <h1>Luxury Redefined</h1>
+        <p class="tagline">Experience performance and elegance.</p>
+        <div class="car-placeholder">
+            Picture of the featured car
         </div>
-    </nav>
-</header>
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Luxury Redefined</h1>
-            <p>Experience performance and elegance.</p>
-            <div class="hero-image-placeholder">
-                <img src="car-hero.jpg" alt="Mercedes Featured Car">
+        <div class="features-container">
+            <div class="feature-item">
+                <h3>Luxury</h3>
+                <p>Premium engineering and unmatched comfort.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Performance</h3>
+                <p>Advanced technology and raw power.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Innovation</h3>
+                <p>The future of driving, today.</p>
             </div>
         </div>
-    </section>
-    <section class="features">
-        <div class="feature-card">
-            <h3>Luxury</h3>
-            <p>Premium engineering and unmatched comfort.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Performance</h3>
-            <p>Advanced technology and raw power.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Innovation</h3>
-            <p>The future of driving, today.</p>
-        </div>
-    </section>
-</main>
-<footer>
-    <p>FOOTER</p>
-    <p>© 2026 Mercedes-Benz</p>
-</footer>
+    </main>
+    <footer>
+        FOOTER
+    </footer>
 </body>
 </html>
