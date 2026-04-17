@@ -1,16 +1,15 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
     color: #e5e5e5;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-html {
-    scroll-behavior: smooth;
 }
 header {
     background: black;
@@ -24,7 +23,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: black;
     padding: 15px;
 }
 .navbar a {
@@ -32,73 +30,63 @@ header {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    position: relative;
     transition: 0.3s;
 }
 .navbar a:hover {
     color: silver;
 }
 .hero-container {
+    padding: 40px 5%;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    gap: 40px;
-    padding: 60px 5%;
-    flex-wrap: wrap;
-.car-placeholder {
-    width: 400px;
-    height: 200px;
-    border: 1px dashed #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
+}
+.hero-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.car-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #444;
+    margin: 30px 0;
 }
 .features-row {
     display: flex;            
-    justify-content: center;   
-    gap: 25px;                
-    padding: 40px 5%;
+    justify-content: center;
+    gap: 25px;
     width: 100%;
-    max-width: 1200px;        
-    margin: 0 auto;            
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
 }
 .feature-card {
-    flex: 1;                    
+    flex: 1;                 
     background: #111;
     border: 1px solid #333;
     border-radius: 12px;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 0 15px rgba(255,255,255,0.05);
-}
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(192,192,192,0.2);
-    border-color: silver;
 }
 .feature-card h3 {
     color: silver;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 footer {
     background-color: #d1d5db; 
     color: black;
     text-align: center;
-    padding: 25px;
-    margin-top: auto;         
+    padding: 20px;
+    margin-top: auto; 
     font-weight: bold;
-    letter-spacing: 2px;
 }
 @media (max-width: 768px) {
     .features-row {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-    }
-    .feature-card {
-        width: 100%;
-        max-width: 400px;
     }
 }
