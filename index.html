@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="weidth=device-width,initial-scale=1.0">
-        <title>
-            Mercedes-Benz
-        </title>
-        <link rel="Stylesheet"href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 <header>
     <nav class="navbar">
         <h2>Mercedes-Benz</h2>
-        <a href="index.html">Home</a>
-        <a href="cars.html">Cars</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a> |
+            <a href="cars.html">Cars</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
 </header>
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-text">
+<main>
+    <section class="hero">
+        <div class="hero-content">
             <h1>Luxury Redefined</h1>
             <p>Experience performance and elegance.</p>
-            <button class="btn primary">Explore</button>
+            <div class="hero-image-placeholder">
+                <img src="car-hero.jpg" alt="Mercedes Featured Car">
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="car-hero.jpg" alt="Mercedes">
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Luxury</h3>
+            <p>Premium engineering and unmatched comfort.</p>
         </div>
-    </div>
-</section>
-<section class="features">
-    <h2>Why Choose Mercedes?</h2>
-    <p>Premium engineering, advanced technology, unmatched comfort.</p>
-</section>
+        <div class="feature-card">
+            <h3>Performance</h3>
+            <p>Advanced technology and raw power.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Innovation</h3>
+            <p>The future of driving, today.</p>
+        </div>
+    </section>
+</main>
 <footer>
+    <p>FOOTER</p>
     <p>© 2026 Mercedes-Benz</p>
 </footer>
-
 </body>
+</html>
