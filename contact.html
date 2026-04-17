@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="weidth=device-width,initial-scale=1.0">
-        <title>
-            Contact-Mercedes-Benz
-        </title>
-        <link rel="Stylesheet"href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mercedes-Benz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
 <header>
     <nav class="navbar">
-        <h2>Mercedes-Benz</h2>
+        <div class="brand-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Benz_logo%2C_2010.svg/1024px-Mercedes-Benz_logo%2C_2010.svg.png" alt="Logo" class="nav-logo">
+            <h2>Mercedes-Benz</h2>
+        </div>
         <a href="index.html">Home</a>
         <a href="cars.html">Cars</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
-<section class="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
-        <textarea placeholder="Your Message"></textarea><br><br>
-        <button class="btn primary">Send Message</button>
-    </form>
-</section>
+<main class="hero-container">
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button class="btn-primary">Send Message</button>
+        </form>
+        <div class="social-container">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-item"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+</main>
 <footer>
     <p>© 2026 Mercedes-Benz</p>
 </footer>
 </body>
+</html>
