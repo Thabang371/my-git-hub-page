@@ -228,36 +228,3 @@ footer {
         padding: 20px 5%;
     }
 }
-.contact-container{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-input[type="text"]
-input[type="email"]
-textarea{
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #444;
-    background-color: #222;
-    color:white;
-    border-radius: 5px;
-    font-family: inherit;
-}
-    min-height: 100px;
-    max-height: 200px;
-    resize: vertical;
-}
-.send-btn{
-    backgroung-color: silver;
-    color: black;
-    padding: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3;
-}
-.send-btn: hover{
-    background-color: white;
-}
