@@ -134,6 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 main {
     flex: 1; 
@@ -175,7 +176,7 @@ footer {
     background-color: #d1d5db;
     color: black;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     font-weight: bold;
     width: 100%;
 }
