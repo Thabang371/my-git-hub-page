@@ -1,83 +1,59 @@
 :root {
     --mb-black: #0a0a0a;
-    --mb-dark-gray: #1a1a1a;
+    --mb-dark-gray: #141414;
     --mb-silver: #a8a8a8;
     --mb-white: #ffffff;
 }
-
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--mb-black);
-    color: var(--mb-white);
-    
-    line-height: 1.6; 
+    background-color: var(--mb-black) !important;
+    color: var(--mb-white) !important;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
-
-a img {
-    border-style: none !important;
-    outline: none;
-}
-
-.navbar-custom {
-    background-color: var(--mb-black);
-    border-bottom: 1px solid #333333;
+header.navbar-custom {
+    background-color: #0a0a0a !important;
+    border-bottom: 1px solid #2d2d2d;
     padding: 15px 0;
 }
 
 .nav-link-custom {
     color: var(--mb-silver) !important;
-    font-weight: 500;
     text-transform: uppercase;
     font-size: 0.85rem;
-    
-    letter-spacing: 1.5px; 
+    letter-spacing: 1.5px;
     padding: 8px 16px !important;
-    transition: color 0.3s ease;
 }
 
-.nav-link-custom:hover {
+.nav-link-custom:hover, .active-page {
     color: var(--mb-white) !important;
 }
 
-.nav-link-custom.active-page {
-    color: var(--mb-white) !important;
-    border-bottom: 2px solid var(--mb-white);
+.hero-wrapper, .content-block {
+    padding: 100px 0 !important;
+    display: block;
 }
 
-.hero-wrapper {
+main {
     background-color: var(--mb-black);
-    
+    display: block;
 }
 
-.content-block {
-    background-color: var(--mb-dark-gray);
-    
-    padding: 80px 0; 
+article .card {
+    background-color: var(--mb-dark-gray) !important;
+    border: 1px solid #2a2a2a !important;
 }
 
-.section-title {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-
-.footer-wrapper {
-    background-color: var(--mb-black);
-    padding: 50px 0 25px 0;
+footer.footer-wrapper {
+    background-color: #020202;
+    padding: 60px 0 30px 0;
     border-top: 1px solid #2d2d2d;
-    
-    clear: both; 
+    clear: both;
+    display: block;
 }
 
 .footer-link {
     color: var(--mb-silver);
     text-decoration: none;
-    font-size: 0.85rem;
-}
-
-.footer-link:hover {
-    color: var(--mb-white);
 }
