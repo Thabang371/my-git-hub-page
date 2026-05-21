@@ -3,77 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars - Mercedes-Benz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mercedes-Benz Showroom | Cars Lineup</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="brand-box">
-            <img src="https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG1.png" alt="Logo" class="nav-logo">
-            <h2>Mercedes-Benz</h2>
-        </div>
-        <a href="index.html">Home</a>
-        <a href="cars.html">Cars</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<main class="cars-section">
-    <h2>Our Fleet</h2>
-    <div class="cars-container"> 
-        <div class="car-card">
-            <div class="image-box">
-                <img src="https://www.mbusa.com/content/dam/mb-nafta/us/future-vehicles/my26/amg-gt-apex/gallery/1-up/2026-AMG-GT63-APXGP-2DR-COUPE-FMG-001-1UP-DR.jpg" alt="AMG GT">
-            </div>
-            <div class="car-info">
-                <h3>AMG GT Coupe</h3>
-                <p>The apex of driving performance, handcrafted for precision and speed.</p>
-                <ul class="specs">
-                    <li>Engine: 4.0L V8 Biturbo</li>
-                    <li>Power: 577 Horsepower</li>
-                    <li>0-100 km/h: 3.2 Seconds</li>
-                    <li>Top Speed: 315 km/h</li>
-                    <li>Drive: AMG Performance 4MATIC+</li>
+
+    <header class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <section class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.jfif" alt="Mercedes-Benz Corporate Logo Star" width="50" height="50">
+            </a>
+            
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mbNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <nav class="collapse navbar-collapse justify-content-end" id="mbNavMenu">
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom active-page" href="cars.html">Showroom</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="innovation.html">Innovation</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="heritage.html">Heritage</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Book a Test Drive</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="car-card">
-            <div class="image-box">
-                <img src="https://hips.hearstapps.com/mtg-prod/671005467271900008bbef5c/12-2025-mercedes-benz-amg-c63s-e-performance-front-view.jpg?w=768" alt="C-Class">
-            </div>
-            <div class="car-info">
-                <h3>C-Class Sedan</h3>
-                <p>A new era of luxury featuring flagship technology in a sporty frame.</p>
-                <ul class="specs">
-                    <li>Engine: 2.0L Inline-4 Turbo</li>
-                    <li>Tech: MBUX Infotainment System</li>
-                    <li>Interior: 64-Color Ambient Lighting</li>
-                    <li>Drive: Mild Hybrid Efficiency</li>
-                    <li>Safety: Active Brake Assist</li>
-                </ul>
-            </div>
-        </div>
-        <div class="car-card">
-            <div class="image-box">
-                <img src="https://hips.hearstapps.com/mtg-prod/690554765576c800029c9184/1-2026-mercedes-benz-amg-g63-front-view.jpg?w=768" alt="G-Wagon">
-            </div>
-            <div class="car-info">
-                <h3>G-Wagon (G-Class)</h3>
-                <p>An off-road legend and global icon of status and rugged durability.</p>
-                <ul class="specs">
-                    <li>Engine: 4.0L V8 Biturbo</li>
-                    <li>Capability: 3 Locking Differentials</li>
-                    <li>Wading Depth: 27.6 Inches</li>
-                    <li>Audio: Burmester® Surround Sound</li>
-                    <li>Transmission: 9G-TRONIC</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</main>
-<footer>
-    <p>© 2026 Mercedes-Benz</p>
-</footer>
+            </nav>
+
+        </section>
+    </header>
+
+    <main style="margin-top: 100px;">
+        
+        <section class="container text-center my-5">
+            <h1 class="section-title">Current Vehicle Fleet</h1>
+            <p class="text-muted">Browse our premium performance models grouped into clear content chunks for scannability.</p>
+        </section>
+
+        <section class="content-block container">
+            <section class="row">
+                
+                <article class="col-md-4 mb-4">
+                    <section class="card border-secondary text-white bg-dark rounded-0 h-100">
+                        <img src="assets/106467978685115961.jfif" alt="Mercedes-AMG High Performance C-Class Fleet Option" class="card-img-top rounded-0" width="400" height="250">
+                        <section class="card-body">
+                            <h2 class="h4 card-title text-uppercase">Mercedes-AMG C 63</h2>
+                            <p class="card-text text-muted small">Handcrafted V8 biturbo hybrid system delivering precision handling, responsive driving dynamics, and racetrack track performance engineering tailored for daily road environments.</p>
+                            <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase tracking-wider">Book Trial</a>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-md-4 mb-4">
+                    <section class="card border-secondary text-white bg-dark rounded-0 h-100">
+                        <img src="assets/106467978685115961.jfif" alt="Mercedes-EQ Luxury Electric SUV Fleet Option" class="card-img-top rounded-0" width="400" height="250">
+                        <section class="card-body">
+                            <h2 class="h4 card-title text-uppercase">Mercedes-EQE SUV</h2>
+                            <p class="card-text text-muted small">Pioneering emission-free luxury mobility platforms. Equipped with an intelligent all-electric dual-motor powertrain, hyper-screen dash arrays, and exceptional battery life intervals.</p>
+                            <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase tracking-wider">Book Trial</a>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-md-4 mb-4">
+                    <section class="card border-secondary text-white bg-dark rounded-0 h-100">
+                        <img src="assets/106467978685115961.jfif" alt="Mercedes-Maybach Ultimate Prestige Sedan Fleet Option" class="card-img-top rounded-0" width="400" height="250">
+                        <section class="card-body">
+                            <h2 class="h4 card-title text-uppercase">Mercedes-Maybach</h2>
+                            <p class="card-text text-muted small">The absolute pinnacle of luxury travel. Features expanded rear seating lounges, bespoke silver accents, noise-canceling cabin layers, and smooth executive-class ride profiling.</p>
+                            <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase tracking-wider">Book Trial</a>
+                        </section>
+                    </section>
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer-wrapper">
+        <section class="container">
+            <section class="row align-items-center">
+                
+                <section class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="assets/logo.jfif" alt="Mercedes Star Insignia" width="30" height="30" class="me-2">
+                    <span class="text-uppercase small tracking-wider text-muted">&copy; 2026 Mercedes-Benz SCIS Project</span>
+                </section>
+                
+                <nav class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="list-inline-item mx-2"><a href="cars.html" class="footer-link">Showroom</a></li>
+                        <li class="list-inline-item mx-2"><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
