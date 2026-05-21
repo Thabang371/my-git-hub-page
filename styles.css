@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--mb-black) !important;
     color: var(--mb-white) !important;
-    line-height: 1.6; /* Sets optimal leading for text legibility */
+    line-height: 1.6; 
     margin: 0;
     padding: 0;
 }
