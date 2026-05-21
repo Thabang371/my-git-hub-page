@@ -3,45 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Mercedes-Benz</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Mercedes-Benz Booking | Test Drive Consultation</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="brand-box">
-            <img src="https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG1.png" class="nav-logo">
-            <h2>Mercedes-Benz</h2>
-        </div>
-        <a href="index.html">Home</a>
-        <a href="cars.html">Cars</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<main class="hero-container">
-    <section class="contact">
-        <h1>Contact Us</h1>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5"></textarea>
-            <button class="btn-primary">Send Message</button>
-        </form>
-        <div class="social-container">
-            <h3>Follow Us</h3>
-            <div class="social-links">
-                <a href="#" class="social-item"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-item"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-item"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" class="social-item"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <p>© 2026 Mercedes-Benz</p>
-</footer>
+
+    <header class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <section class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.jfif" alt="Mercedes-Benz Corporate Logo Star" width="50" height="50">
+            </a>
+            
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mbNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <nav class="collapse navbar-collapse justify-content-end" id="mbNavMenu">
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="cars.html">Showroom</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="innovation.html">Innovation</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="heritage.html">Heritage</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom active-page" href="contact.html">Book a Test Drive</a></li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+
+    <main style="margin-top: 100px;">
+        
+        <section class="container text-center my-5">
+            <h1 class="section-title">Book A Test Drive</h1>
+            <p class="text-muted">Submit your details below to schedule a personalized dealer consultation trial.</p>
+        </section>
+
+        <section class="content-block container my-5">
+            <section class="row justify-content-center">
+                
+                <article class="col-lg-8 border border-secondary bg-dark p-5">
+                    
+                    <form action="#" method="POST">
+                        
+                        <section class="mb-4">
+                            <label for="fullName" class="form-label text-uppercase small text-muted">Full Name</label>
+                            <input type="text" id="fullName" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="Enter your full name" required>
+                        </section>
+
+                        <section class="mb-4">
+                            <label for="userEmail" class="form-label text-uppercase small text-muted">Email Address</label>
+                            <input type="email" id="userEmail" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="name@example.com" required>
+                        </section>
+
+                        <section class="mb-4">
+                            <label for="userPhone" class="form-label text-uppercase small text-muted">Phone Number</label>
+                            <input type="tel" id="userPhone" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="e.g. +267 71000000" required>
+                        </section>
+
+                        <section class="mb-4">
+                            <label for="carModel" class="form-label text-uppercase small text-muted">Select Fleet Fleet Model</label>
+                            <select id="carModel" class="form-select bg-black text-white rounded-0 border-secondary" required>
+                                <option value="" selected disabled>Choose your preferred model...</option>
+                                <option value="amg">Mercedes-AMG C 63 Sedan</option>
+                                <option value="eqe">Mercedes-EQE Electric SUV</option>
+                                <option value="maybach">Mercedes-Maybach Luxury Lounge</option>
+                            </select>
+                        </section>
+
+                        <section class="mb-5">
+                            <label for="userMessage" class="form-label text-uppercase small text-muted">Additional Consultation Requests</label>
+                            <textarea id="userMessage" rows="4" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="Specify preferred appointment dates or special dealer accommodations..."></textarea>
+                        </section>
+
+                        <section class="text-center">
+                            <button type="submit" class="btn-mb-primary w-100">Submit Request</button>
+                        </section>
+
+                    </form>
+                    
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer-wrapper">
+        <section class="container">
+            <section class="row align-items-center">
+                
+                <section class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="assets/logo.jfif" alt="Mercedes Star Insignia" width="30" height="30" class="me-2">
+                    <span class="text-uppercase small tracking-wider text-muted">&copy; 2026 Mercedes-Benz SCIS Project</span>
+                </section>
+                
+                <nav class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="list-inline-item mx-2"><a href="cars.html" class="footer-link">Showroom</a></li>
+                        <li class="list-inline-item mx-2"><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
