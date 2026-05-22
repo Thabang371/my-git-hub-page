@@ -1,99 +1,3 @@
-:root {
-    --mb-black: #05070b;
-    --mb-dark-panel: #0a0d14;
-    --mb-white: #ffffff;
-    --mb-muted: #8a92a6;
-    --mb-border: #ffffff;
-}
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--mb-black) !important;
-    color: var(--mb-white) !important;
-    margin: 0;
-    padding: 0;
-}
-.wireframe-box {
-    border: 1px solid var(--mb-border);
-    padding: 20px;
-    background-color: transparent;
-    margin-bottom: 20px;
-}
-header.navbar-custom {
-    background-color: var(--mb-black) !important;
-    border-bottom: 1px solid var(--mb-border);
-    padding: 20px 0;
-}
-.nav-box {
-    border: 1px solid var(--mb-border);
-    padding: 5px 15px;
-    margin-left: 10px;
-}
-.nav-link-custom {
-    color: var(--mb-white) !important;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-.header-banner-section {
-    background-color: #0d111a;
-    border-bottom: 1px solid var(--mb-border);
-    padding: 60px 0;
-}
-.media-placeholder {
-    background-color: #232b3c;
-    border: 1px solid var(--mb-border);
-    min-height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--mb-muted);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-}
-.banner-placeholder {
-    min-height: 400px;
-}
-.showroom-card {
-    border: 1px solid var(--mb-border);
-    background-color: var(--mb-black);
-    padding: 15px;
-    height: 100%;
-}
-.form-control-custom {
-    background-color: var(--mb-black);
-    border: 1px solid var(--mb-border);
-    color: var(--mb-white) !important;
-    border-radius: 0;
-    padding: 12px;
-}
-.btn-wireframe {
-    background-color: var(--mb-white);
-    color: var(--mb-black);
-    border: 1px solid var(--mb-border);
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 12px;
-    width: 100%;
-    border-radius: 0;
-}
-footer.footer-wrapper {
-    background-color: var(--mb-black);
-    border-top: 1px solid var(--mb-border);
-    padding: 60px 0 20px 0;
-    margin-top: 80px;
-}
-.footer-column-box {
-    border: 1px solid var(--mb-border);
-    padding: 25px;
-    min-height: 220px;
-}
-.footer-bottom-bar {
-    border-top: 1px solid var(--mb-border);
-    padding-top: 20px;
-    margin-top: 40px;
-}
 .home-hero-showcase {
     position: relative;
     background-color: #1a2232;
@@ -129,4 +33,7 @@ footer.footer-wrapper {
     transition: all 0.2s ease;
 }
 
-.btn
+.btn-cta-home:hover {
+    background-color: transparent;
+    color: var(--mb-white);
+}
