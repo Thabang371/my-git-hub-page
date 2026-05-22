@@ -94,3 +94,39 @@ footer.footer-wrapper {
     padding-top: 20px;
     margin-top: 40px;
 }
+.home-hero-showcase {
+    position: relative;
+    background-color: #1a2232;
+    border-bottom: 1px solid var(--mb-border);
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay-card {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 550px;
+    background-color: var(--mb-black);
+    border: 1px solid var(--mb-border);
+    padding: 40px;
+    z-index: 5;
+}
+
+.btn-cta-home {
+    background-color: var(--mb-white);
+    color: var(--mb-black);
+    border: 1px solid var(--mb-border);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
+
+.btn
