@@ -209,3 +209,39 @@ figure.banner-placeholder {
     height: 400px !important;
     min-height: 400px !important;
 }
+figure.feature-circle {
+    width: 180px !important;
+    height: 180px !important;
+    min-height: 180px !important;
+    border: 1px solid var(--mb-border);
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mb-black);
+    margin: 0 auto 25px auto;
+    padding: 0;
+}
+
+figure.feature-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.feature-title-box {
+    border: 1px solid var(--mb-border);
+    background-color: rgba(255, 255, 255, 0.01);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.feature-desc-box {
+    border: 1px solid var(--mb-border);
+    background-color: rgba(255, 255, 255, 0.01);
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 80px;
+}
