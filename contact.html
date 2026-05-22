@@ -3,116 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes-Benz Booking | Test Drive Consultation</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Mercedes-Benz Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <header class="navbar navbar-expand-lg navbar-custom sticky-top">
         <section class="container">
-            
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.jfif" alt="Mercedes-Benz Corporate Logo Star" width="50" height="50">
-            </a>
-            
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mbNavMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-          <nav class="collapse navbar-collapse justify-content-end" id="mbNavMenu">
-    <ul class="navbar-nav mb-0">
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="cars.html">Showroom</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="innovation.html">Innovation</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Book a Test Drive</a></li>
-    </ul>
-</nav>
-
+            <article class="nav-box">
+                <a class="navbar-brand m-0 p-0" href="index.html">
+                    <img src="assets/logo.jfif" alt="Mercedes Logo" width="40" height="40">
+                </a>
+            </article>
+            <nav class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-box"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+                    <li class="nav-item nav-box"><a class="nav-link nav-link-custom" href="cars.html">Showroom</a></li>
+                    <li class="nav-item nav-box"><a class="nav-link nav-link-custom" href="innovation.html">Innovation</a></li>
+                    <li class="nav-item nav-box"><a class="nav-link nav-link-custom" href="about.html">Heritage</a></li>
+                    <li class="nav-item nav-box"><a class="nav-link nav-link-custom" href="contact.html">Book a Test Drive</a></li>
+                </ul>
+            </nav>
         </section>
     </header>
 
-    <main style="margin-top: 100px;">
-        
-        <section class="container text-center my-5">
-            <h1 class="section-title">Book A Test Drive</h1>
-            <p class="text-muted">Submit your details below to schedule a personalized dealer consultation trial.</p>
-        </section>
+    <main>
+        <header class="header-banner-section">
+            <section class="container">
+                <article class="wireframe-box d-inline-block px-4 py-2 mb-3">
+                    <h1 class="h3 m-0 text-uppercase">[Booking Page Heading]</h1>
+                </article>
+                <br>
+                <article class="wireframe-box d-inline-block px-4 py-2">
+                    <p class="m-0 small text-muted">[Page description / subtitle]</p>
+                </article>
+            </section>
+        </header>
 
-        <section class="content-block container my-5">
-            <section class="row justify-content-center">
+        <section class="container my-5">
+            <section class="row g-4">
                 
-                <article class="col-lg-8 border border-secondary bg-dark p-5">
-                    
-                    <form action="#" method="POST">
+                <article class="col-md-6">
+                    <section class="wireframe-box p-4">
+                        <header class="wireframe-box mb-4 py-2">
+                            <h2 class="h6 m-0 text-uppercase text-center">[Interactive Form Container]</h2>
+                        </header>
                         
-                        <section class="mb-4">
-                            <label for="fullName" class="form-label text-uppercase small text-muted">Full Name</label>
-                            <input type="text" id="fullName" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="Enter your full name" required>
-                        </section>
+                        <form action="#" method="POST">
+                            <section class="mb-3">
+                                <fieldset class="wireframe-box py-1 px-3 mb-2"><legend class="visually-hidden">Name Label</legend><span class="small text-muted">[Input Label]</span></fieldset>
+                                <input type="text" class="form-control-custom w-100" placeholder="[Enter Full Name]" required>
+                            </section>
+                            
+                            <section class="mb-3">
+                                <fieldset class="wireframe-box py-1 px-3 mb-2"><legend class="visually-hidden">Email Label</legend><span class="small text-muted">[Input Label]</span></fieldset>
+                                <input type="email" class="form-control-custom w-100" placeholder="[Enter Email Address]" required>
+                            </section>
+                            
+                            <section class="mb-4">
+                                <fieldset class="wireframe-box py-1 px-3 mb-2"><legend class="visually-hidden">Selection Label</legend><span class="small text-muted">[Input Label]</span></fieldset>
+                                <select class="form-control-custom form-select w-100" required>
+                                    <option value="" selected disabled>[Select Model Dropdown]</option>
+                                    <option value="amg">Mercedes-AMG C 63</option>
+                                    <option value="eqe">Mercedes-EQE SUV</option>
+                                </select>
+                            </section>
+                            
+                            <button type="submit" class="btn-wireframe">[Submit Booking Request]</button>
+                        </form>
+                    </section>
+                </article>
 
-                        <section class="mb-4">
-                            <label for="userEmail" class="form-label text-uppercase small text-muted">Email Address</label>
-                            <input type="email" id="userEmail" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="name@example.com" required>
-                        </section>
-
-                        <section class="mb-4">
-                            <label for="userPhone" class="form-label text-uppercase small text-muted">Phone Number</label>
-                            <input type="tel" id="userPhone" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="e.g. +267 71000000" required>
-                        </section>
-
-                        <section class="mb-4">
-                            <label for="carModel" class="form-label text-uppercase small text-muted">Select Fleet Fleet Model</label>
-                            <select id="carModel" class="form-select bg-black text-white rounded-0 border-secondary" required>
-                                <option value="" selected disabled>Choose your preferred model...</option>
-                                <option value="amg">Mercedes-AMG C 63 Sedan</option>
-                                <option value="eqe">Mercedes-EQE Electric SUV</option>
-                                <option value="maybach">Mercedes-Maybach Luxury Lounge</option>
-                            </select>
-                        </section>
-
-                        <section class="mb-5">
-                            <label for="userMessage" class="form-label text-uppercase small text-muted">Additional Consultation Requests</label>
-                            <textarea id="userMessage" rows="4" class="form-control bg-black text-white rounded-0 border-secondary" placeholder="Specify preferred appointment dates or special dealer accommodations..."></textarea>
-                        </section>
-
-                        <section class="text-center">
-                            <button type="submit" class="btn-mb-primary w-100">Submit Request</button>
-                        </section>
-
-                    </form>
-                    
+                <article class="col-md-6">
+                    <section class="wireframe-box p-4 h-100 d-flex flex-column justify-content-between">
+                        <header class="wireframe-box py-2 mb-3">
+                            <h2 class="h6 m-0 text-uppercase text-center">[Contact Details & Location Panel]</h2>
+                        </header>
+                        <figure class="media-placeholder flex-grow-1 mb-0">[Interactive Map Space / Showroom Location Blueprint]</figure>
+                    </section>
                 </article>
 
             </section>
         </section>
-
     </main>
 
     <footer class="footer-wrapper">
         <section class="container">
-            <section class="row align-items-center">
-                
-                <section class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="assets/logo.jfif" alt="Mercedes Star Insignia" width="30" height="30" class="me-2">
-                    <span class="text-uppercase small tracking-wider text-muted">&copy; 2026 Mercedes-Benz SCIS Project</span>
-                </section>
-                
-                <nav class="col-md-6 text-center text-md-end">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mx-2"><a href="index.html" class="footer-link">Home</a></li>
-                        <li class="list-inline-item mx-2"><a href="cars.html" class="footer-link">Showroom</a></li>
-                        <li class="list-inline-item mx-2"><a href="contact.html" class="footer-link">Contact</a></li>
-                    </ul>
+            <section class="row g-4">
+                <article class="col-md-4">
+                    <section class="footer-column-box text-center">
+                        <p class="wireframe-box py-2">[LOGO]</p>
+                        <p class="wireframe-box py-3 m-0 small">[Company tagline]</p>
+                    </section>
+                </article>
+                <article class="col-md-4">
+                    <section class="footer-column-box text-center">
+                        <p class="wireframe-box py-1 mb-2 small">[Navigation]</p>
+                        <div class="wireframe-box py-1 mb-1 small">Link</div>
+                        <div class="wireframe-box py-1 mb-1 small">Link</div>
+                        <div class="wireframe-box py-1 mb-1 small">Link</div>
+                        <div class="wireframe-box py-1 m-0 small">Link</div>
+                    </section>
+                </article>
+                <article class="col-md-4">
+                    <section class="footer-column-box text-center">
+                        <p class="wireframe-box py-1 mb-3 small">[Social Media]</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <span class="wireframe-box px-3 py-2 m-0">◽</span>
+                            <span class="wireframe-box px-3 py-2 m-0">◽</span>
+                            <span class="wireframe-box px-3 py-2 m-0">◽</span>
+                        </div>
+                    </section>
+                </article>
+            </section>
+            <section class="footer-bottom-bar d-flex justify-content-between align-items-center">
+                <article class="wireframe-box py-1 px-3 m-0 small">[Copyright &copy; 2026]</article>
+                <nav class="d-flex gap-2">
+                    <span class="wireframe-box py-1 px-2 small">[Privacy]</span>
+                    <span class="wireframe-box py-1 px-2 small">[Terms]</span>
+                    <span class="wireframe-box py-1 px-2 small">[Cookies]</span>
                 </nav>
-
             </section>
         </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
