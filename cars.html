@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card-image-box {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body class="bg-dark text-light">
 
@@ -15,7 +21,7 @@
             <a class="navbar-brand m-0 p-0" href="index.html">
                 <img src="assets/logo.jfif" alt="Mercedes Logo" width="50">
             </a>
-            <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -31,76 +37,100 @@
     </header>
 
     <main class="container py-5">
-        <section class="text-center mb-5 border border-secondary p-4 bg-black">
-            <h1 class="display-5 fw-bold text-uppercase">[Showroom]</h1>
+        <header class="text-center mb-5 border border-secondary p-4 bg-black">
+            <h1 class="display-5 fw-bold text-uppercase">Showroom</h1>
             <p class="text-secondary mb-0">Select a Beast To Test Drive Today.</p>
-        </section>
+        </header>
 
-        <section class="row g-4">
+        <section class="row g-4 align-items-stretch">
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="G63amg.jfif" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[AMG G 63]</h3>
-                        <p class="text-secondary small">The Mercedes-AMG G 63 is the pinnacle of the iconic G-Wagon lineup. It combines military-grade off-road capabilities with supercar-level performance and luxury. Starting at roughly MSRP, it features a handcrafted V8 hybrid engine, advanced suspension, and a highly customizable interior.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="G63amg.jfif" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">AMG G 63</h3>
+                            <p class="text-secondary small">The Mercedes-AMG G 63 combines military-grade off-road capabilities with supercar performance. Features a handcrafted V8 hybrid engine and highly customizable luxurious interior layout structures.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="Eqs.jpg" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[EQS]</h3>
-                        <p class="text-secondary small">features a lineup of premium all-electric vehicles that serve as the pinnacle of the brand's EV lineup, offering flagship luxury, cutting-edge technology, and exceptional range.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="Eqs.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">EQS</h3>
+                            <p class="text-secondary small">Features a premium all-electric configuration serving as the absolute pinnacle of luxury EV engineering, complete with full digital cockpit displays and exceptional range profiles.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="c class.jpg" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[C-class]</h3>
-                        <p class="text-secondary small">The C-Class serves as the luxury benchmark for daily driving. It strikes a balance between sleek exterior proportions, dynamic handling, and a futuristic, digital-heavy cabin.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="c class.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">C-class</h3>
+                            <p class="text-secondary small">The industrial benchmark for premium daily performance matrix execution. Balancing crisp aerodynamic bodily proportions with dynamic street safety architecture.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="assets/gt coupe.jpg" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[GT Coupe]</h3>
-                        <p class="text-secondary small">Aerodynamic optimization variant built with high-torque configurations.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="assets/gt coupe.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">GT Coupe</h3>
+                            <p class="text-secondary small">Aerodynamic tracking optimization variants systematically engineered with high-torque drivetrain system specifications for intense track stability handling metrics.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="assets/gla.jpg" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[GLA]</h3>
-                        <p class="text-secondary small">The brand's smallest and most affordable entry-level luxury SUV.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="assets/gla.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">GLA</h3>
+                            <p class="text-secondary small">The brand's sleek urban entry asset configuration. Compact profile layouts mixed with high ground clearance properties optimized for multi-terrain execution environments.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
             
             <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black">
-                    <img src="sl roadstar.jpg" class="img-fluid w-100 border-bottom border-secondary" alt="Vehicle Specimen">
-                    <section class="p-4">
-                        <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">[SL ROADSTAR]</h3>
-                        <p class="text-secondary small">A high-performance grand tourer that blends iconic design, a classic fabric soft top and a 2+2 seating configuration. Pricing generally ranges from $145,000 for the SL 55 to over $226,000.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace">Configure Variant</a>
-                    </section>
+                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
+                    <header class="p-0 m-0">
+                        <img src="sl roadstar.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
+                        <fieldset class="p-4 border-0">
+                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">SL ROADSTAR</h3>
+                            <p class="text-secondary small">High-performance grand touring engineering that blends classical soft-top drop deployment mechanics with premium high-velocity 2+2 spatial luxury cabins.</p>
+                        </fieldset>
+                    </header>
+                    <footer class="p-4 pt-0 bg-transparent border-0">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
+                    </footer>
                 </section>
             </article>
 
