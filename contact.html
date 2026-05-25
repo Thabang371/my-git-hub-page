@@ -38,10 +38,11 @@
         </header>
 
         <section class="row g-4">
+            
             <article class="col-md-6">
                 <section class="border border-secondary p-4 h-100">
                     <header class="border border-secondary mb-4 text-center py-2 bg-secondary text-dark">
-                        <h2 class="h6 m-0 text-uppercase fw-bold font-monospace">[Booking Form]</h2>
+                        <h2 class="h6 m-0 text-uppercase fw-bold font-monospace">Reservation Form Dashboard</h2>
                     </header>
                     
                     <form action="#" method="POST">
@@ -49,17 +50,17 @@
                             <legend class="visually-hidden">Test Drive Validation Fields</legend>
                             
                             <section class="mb-3">
-                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">[Enter Full Name]</label>
+                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">Full Name Identity</label>
                                 <input type="text" class="form-control bg-transparent text-light border-secondary rounded-0" placeholder="Enter Full Name Input Here" required>
                             </section>
                             
                             <section class="mb-3">
-                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">[Enter Email]</label>
+                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">Email Address Matrix</label>
                                 <input type="email" class="form-control bg-transparent text-light border-secondary rounded-0" placeholder="Enter Email Address Input Here" required>
                             </section>
                             
                             <section class="mb-3">
-                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">[Choose Model]</label>
+                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">Select Fleet Model</label>
                                 <select class="form-select bg-transparent text-light border-secondary rounded-0" required>
                                     <option value="" selected disabled class="bg-dark text-secondary">Select Fleet Variant Choice</option>
                                     <option value="amg-g63" class="bg-dark">Mercedes-AMG G 63</option>
@@ -69,11 +70,11 @@
                             </section>
                             
                             <section class="mb-4">
-                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">[Text Area Message]</label>
+                                <label class="border border-secondary d-block py-1 px-3 mb-2 small text-secondary font-monospace">Additional Driving Specifications</label>
                                 <textarea class="form-control bg-transparent text-light border-secondary rounded-0" rows="3" placeholder="Enter Additional Custom Specifications..."></textarea>
                             </section>
                             
-                            <button type="submit" class="btn btn-light w-100 text-center py-2 rounded-0 font-monospace fw-bold text-uppercase">[Submit Request]</button>
+                            <button type="submit" class="btn btn-light w-100 text-center py-2 rounded-0 font-monospace fw-bold text-uppercase">Submit Fleet Request</button>
                         </fieldset>
                     </form>
                 </section>
@@ -81,30 +82,38 @@
 
             <article class="col-md-6">
                 <section class="d-flex flex-column gap-4 h-100">
+                    
                     <aside class="border border-secondary p-4">
                         <header class="border border-secondary mb-3 text-center py-1 font-monospace text-secondary">
-                            <h2 class="h6 m-0 fw-bold">[Contact Information Row Area]</h2>
+                            <h2 class="h6 m-0 fw-bold">Corporate Contact Registry</h2>
                         </header>
                         
                         <ul class="list-unstyled m-0 d-flex flex-column gap-2">
                             <li class="d-flex align-items-center gap-3 border border-secondary p-2">
-                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">[I]</span>
-                                <span class="small text-secondary">[Support Hotline: +1 (800) 367-6372]</span>
+                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">PH</span>
+                                <span class="small text-secondary">Support Hotline: +1 (800) 367-6372</span>
                             </li>
                             <li class="d-flex align-items-center gap-3 border border-secondary p-2">
-                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">[I]</span>
-                                <span class="small text-secondary">[Electronic Mail: concierge@mercedes-benz.com]</span>
+                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">EM</span>
+                                <span class="small text-secondary">Electronic Mail: concierge@mercedes-benz.com</span>
                             </li>
                             <li class="d-flex align-items-center gap-3 border border-secondary p-2">
-                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">[I]</span>
-                                <span class="small text-secondary">[Corporate HQ: Stuttgart, Germany]</span>
+                                <span class="border border-secondary text-center font-monospace text-secondary flex-shrink-0" style="width:35px; height:35px; line-height:33px;">HQ</span>
+                                <span class="small text-secondary">Corporate HQ: Stuttgart, Germany</span>
                             </li>
                         </ul>
                     </aside>
 
-                    <figure class="border border-secondary bg-secondary text-dark flex-grow-1 m-0 d-flex justify-content-center align-items-center p-4">
-                        <p class="text-uppercase font-monospace fw-bold small text-center m-0">[Map Location Image Representation Matrix Tracking Showroom Coordinates]</p>
-                    </figure>
+                    <section class="border border-secondary p-0 flex-grow-1" style="min-height: 280px;">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Stuttgart,Germany&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            class="w-100 h-100 border-0"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="min-height: 280px; filter: grayscale(1) invert(1) contrast(1.2);">
+                        </iframe>
+                    </section>
 
                 </section>
             </article>
