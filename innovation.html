@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovation | Mercedes-Benz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Innovation | Mercedes-Benz</title>
+<link rel="icon" href="logo.jfif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fx.css">
 </head>
 <body class="bg-dark text-light">
 
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top py-3">
-        <section class="container">
-            <a class="navbar-brand m-0 p-0" href="index.html">
-                <img src="assets/logo.jfif" alt="Mercedes Logo" width="50">
-            </a>
-            <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-3 gap-lg-4 text-uppercase fs-6 fw-bold flex-column flex-lg-row pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link text-secondary" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="cars.html">Showroom</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="innovation.html">Innovation</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="about.html">Heritage</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="contact.html">Book a Test Drive</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+<header class="hud-nav">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <img src="logo.jfif" alt="Mercedes-Benz">
+      <span>Mercedes&nbsp;Benz</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="hud-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Showroom</a></li>
+      <li><a href="innovation.html" class="active">Innovation</a></li>
+      <li><a href="about.html">Heritage</a></li>
+      <li><a href="contact.html">Book a Test Drive</a></li>
+    </ul>
+  </div>
+</header>
 
-    <main class="container py-5">
-        <header class="text-center mb-5 border border-secondary p-4 bg-black">
-            <h1 class="display-5 fw-bold text-uppercase">Next-Gen Intelligence Engine</h1>
-            <p class="text-secondary mb-0">Mercedes-Benz scales embedded intelligence ecosystems to transform cockpit environments.</p>
-        </header>
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Systems &amp; Software</span>
+      <h1>Next-Gen Intelligence Engine</h1>
+      <p>Mercedes-Benz scales embedded intelligence ecosystems to transform cockpit environments.</p>
+    </div>
+  </div>
 
-        <section class="mb-5 border border-secondary p-0 bg-black">
-            <picture>
-                <img src="MBUX.jpg" alt="MBUX Digital Hyperscreen Intelligence Matrix" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 250px;">
-            </picture>
-        </section>
+  <section class="block" style="padding-bottom:0;">
+    <div class="container">
+      <div class="panel tilt reveal" style="padding:0; overflow:hidden;">
+        <img src="MBUX.jpg" alt="MBUX Digital Hyperscreen" style="width:100%; height:420px; object-fit:cover; display:block; filter:grayscale(.15) contrast(1.05);">
+      </div>
+    </div>
+  </section>
 
-        <section class="row g-5 mb-5 align-items-stretch">
-            <article class="col-md-6 border border-secondary p-4 d-flex flex-column justify-content-center bg-black">
-                <h3 class="h4 text-uppercase mb-3 border-bottom border-secondary pb-2">Ecosystem Core</h3>
-                <p class="text-secondary">Our software layers combine neural frameworks with cloud execution patterns to personalize drive dynamic metrics continuously.</p>
-                <p class="text-secondary">Predictive climate, media curation, and optimal safety configurations recalculate parameters dynamically relative to ambient environmental telemetry inputs.</p>
-            </article>
-            <article class="col-md-6 border border-secondary p-0 bg-black">
-                <img src="battery innovation.jepg.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Solid State Battery Technology Render">
-            </article>
-        </section>
+  <section class="block">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:stretch;">
+        <article class="panel reveal reveal-l">
+          <h3 style="font-size:1rem;">Ecosystem Core</h3>
+          <p>Our software layers combine neural frameworks with cloud execution patterns to personalize drive dynamics continuously.</p>
+          <p>Predictive climate, media curation, and optimal safety configurations recalculate parameters dynamically relative to ambient environmental telemetry inputs.</p>
+        </article>
+        <article class="reveal reveal-r" style="border:1px solid var(--line); overflow:hidden;">
+          <img src="battery innovation.jepg.webp" alt="Solid-state battery technology" style="width:100%; height:100%; object-fit:cover; display:block; min-height:220px;">
+        </article>
+      </div>
+    </div>
+  </section>
 
-        <h3 class="h4 text-uppercase mb-4">Key Features</h3>
-        <section class="row g-4">
-            <article class="col-md-4">
-                <section class="border border-secondary p-4 bg-black h-100 text-center">
-                    <i class="bi bi-cpu fs-1 text-secondary mb-3 d-block"></i>
-                    <h4 class="h6 text-uppercase">[AI]</h4>
-                    <p class="text-secondary small mb-0">[ In its vehicles, the Mercedes-Benz User Experience (MBUX) uses AI for voice recognition, predictive routines, and automated driving, with partnerships like Liquid AI continually improving in-car embedded intelligence]</p>
-                </section>
-            </article>
-            <article class="col-md-4">
-                <section class="border border-secondary p-4 bg-black h-100 text-center">
-                    <i class="bi bi-shield-check fs-1 text-secondary mb-3 d-block"></i>
-                    <h4 class="h6 text-uppercase">[SAFTEY]</h4>
-                    <p class="text-secondary small mb-0">[Mercedes-Benz is a pioneer in automotive safety, having introduced innovations like the crumple zone and standard Anti-lock Braking Systems (ABS)]</p>
-                </section>
-            </article>
-            <article class="col-md-4">
-                <section class="border border-secondary p-4 bg-black h-100 text-center">
-                    <i class="bi bi-lightning-charge fs-1 text-secondary mb-3 d-block"></i>
-                    <h4 class="h6 text-uppercase">[SPEED]</h4>
-                    <p class="text-secondary small mb-0">[Mercedes-Benz speed systems manage vehicle speed through two primary technologies: Active Speed Limit Assist and Speed Limit Assist]</p>
-                </section>
-            </article>
-        </section>
-    </main>
+  <section class="block" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Capability Stack</span>
+        <h2>Key Features</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="panel tilt reveal" style="text-align:center;">
+          <div style="font-family:'Michroma',sans-serif; font-size:.7rem; letter-spacing:.2em; color:var(--teal); margin-bottom:16px;">01 // AI</div>
+          <p>MBUX uses AI for voice recognition, predictive routines, and automated driving — with partners like Liquid AI continually improving in-car embedded intelligence.</p>
+        </article>
+        <article class="panel tilt reveal" style="text-align:center;">
+          <div style="font-family:'Michroma',sans-serif; font-size:.7rem; letter-spacing:.2em; color:var(--teal); margin-bottom:16px;">02 // SAFETY</div>
+          <p>Mercedes-Benz pioneered automotive safety — from the crumple zone to standard Anti-lock Braking Systems (ABS), now extended with Pre-Safe&reg; prediction.</p>
+        </article>
+        <article class="panel tilt reveal" style="text-align:center;">
+          <div style="font-family:'Michroma',sans-serif; font-size:.7rem; letter-spacing:.2em; color:var(--teal); margin-bottom:16px;">03 // SPEED</div>
+          <p>Speed systems manage velocity through two primary technologies: Active Speed Limit Assist and Speed Limit Assist.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <footer class="border-top border-secondary py-5 bg-dark text-secondary text-center small">
-        <section class="container">
-            <section class="row g-4">
-                
-                <article class="col-md-4 border border-secondary p-3">
-                    <h6 class="text-white text-uppercase mb-3">Mercedes-Benz AG</h6>
-                    <p class="mb-0">&copy; 2026 Authorized Dealership Network.<br>All rights reserved globally.</p>
-                </article>
-                
-                <article class="col-md-4 border border-secondary p-3 d-flex flex-column gap-2">
-                    <h6 class="text-white text-uppercase mb-3">Popular Sites</h6>
-                    <a href="index.html" class="text-secondary text-decoration-none">Home</a>
-                    <a href="cars.html" class="text-secondary text-decoration-none">Showroom</a>
-                    <a href="contact.html" class="text-secondary text-decoration-none">Contact</a>
-                </article>
-                
-                <article class="col-md-4 border border-secondary p-3">
-                    <h6 class="text-white text-uppercase mb-3">Connect</h6>
-                    <nav class="d-flex justify-content-center gap-3">
-                        <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="https://x.com/MercedesBenz" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x fs-5"></i></a>
-                        <a href="https://www.youtube.com/@MercedesBenz" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-youtube fs-5"></i></a>
-                    </nav>
-                </article>
+<footer class="hud-footer">
+  <div class="container">
+    <div class="grid grid-3">
+      <div>
+        <h6>Mercedes-Benz AG</h6>
+        <p class="mono" style="font-size:.8rem;">&copy; 2026 Authorized Dealership Network.<br>All rights reserved globally.</p>
+      </div>
+      <div>
+        <h6>Popular Sites</h6>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Showroom</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h6>Connect</h6>
+        <nav class="social">
+          <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank" rel="noopener">IG</a>
+          <a href="https://x.com/MercedesBenz" target="_blank" rel="noopener">X</a>
+          <a href="https://www.youtube.com/@MercedesBenz" target="_blank" rel="noopener">YT</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">Thabang Lejowa &mdash; my-git-hub-page</div>
+  </div>
+</footer>
 
-            </section>
-        </section>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/fx.js"></script>
 </body>
 </html>
