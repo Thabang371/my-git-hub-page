@@ -1,113 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heritage | Our History</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage | Our History</title>
+<link rel="icon" href="logo.jfif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fx.css">
 </head>
 <body class="bg-dark text-light">
 
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top py-3">
-        <section class="container">
-            <a class="navbar-brand m-0 p-0" href="index.html">
-                <img src="logo.jfif" alt="Mercedes Logo" width="50">
-            </a>
-            <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-3 gap-lg-4 text-uppercase fs-6 fw-bold flex-column flex-lg-row pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link text-secondary" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="cars.html">Showroom</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="innovation.html">Innovation</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">Heritage</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="contact.html">Book a Test Drive</a></li>
-                </ul>
-            </section>
-        </section>
-    </header>
+<header class="hud-nav">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <img src="logo.jfif" alt="Mercedes-Benz">
+      <span>Mercedes&nbsp;Benz</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="hud-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Showroom</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="about.html" class="active">Heritage</a></li>
+      <li><a href="contact.html">Book a Test Drive</a></li>
+    </ul>
+  </div>
+</header>
 
-    <main class="container my-5">
-        <header class="mb-5">
-            <section class="border border-secondary d-inline-block p-2 mb-2">
-                <h1 class="h4 text-uppercase m-0 fw-bold">Our History</h1>
-            </section>
-            <br>
-            <section class="border border-secondary d-inline-block p-2">
-                <p class="m-0 small text-secondary">A timeline tracking over a century of automotive paradigm definition and luxury engineering history.</p>
-            </section>
-        </header>
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Since 1886</span>
+      <h1>Our History</h1>
+      <p>A timeline tracking over a century of automotive paradigm definition and luxury engineering.</p>
+    </div>
+  </div>
 
-        <section class="d-flex flex-column gap-5 mb-5">
-            
-            <article class="row g-4 align-items-center border border-secondary p-3 mx-0 bg-black">
-                <figure class="col-md-5 m-0" style="height: 220px;">
-                    <img src="1886 motorwagen.jpg" alt="1886 Motorwagen Invention" class="img-fluid w-100 h-100" style="object-fit: cover;">
-                </figure>
-                <section class="col-md-7">
-                    <span class="badge border border-secondary text-secondary mb-2 font-monospace">ERA: 1886</span>
-                    <h2 class="h5 text-uppercase fw-bold text-white">The Birth of the Automobile</h2>
-                    <p class="small text-secondary mb-0">Karl Benz awards the world its first official automotive patent for a three-wheeled motor vehicle powered by a gas engine. This exact historical coordinate fundamentally redefines global land transportation modules permanently.</p>
-                </section>
-            </article>
+  <section class="block">
+    <div class="container">
+      <div style="display:flex; flex-direction:column; gap:32px;">
 
-            <article class="row g-4 align-items-center border border-secondary p-3 mx-0 bg-black flex-md-row-reverse">
-                <figure class="col-md-5 m-0" style="height: 220px;">
-                    <img src="1926.jpg" alt="1951 Safety Crumple Zone Blueprint" class="img-fluid w-100 h-100" style="object-fit: cover;">
-                </figure>
-                <section class="col-md-7">
-                    <span class="badge border border-secondary text-secondary mb-2 font-monospace">ERA: 1951</span>
-                    <h2 class="h5 text-uppercase fw-bold text-white">The Crumple Zone</h2>
-                    <p class="small text-secondary mb-0">Béla Barényi introduces the structural crumple zone architectural pattern into mainstream vehicle development. By engineering safe, deformable structures around rigid safety passenger cells, cabin impact survival coordinates improve exponentially.</p>
-                </section>
-            </article>
+        <article class="timeline-item tilt reveal reveal-l">
+          <figure><img src="1886 motorwagen.jpg" alt="1886 Motorwagen Invention"></figure>
+          <div class="copy">
+            <span class="badge">ERA: 1886</span>
+            <h2 style="font-size:1.15rem;">The Birth of the Automobile</h2>
+            <p>Karl Benz is awarded the world's first official automotive patent for a three-wheeled motor vehicle powered by a gas engine — permanently redefining global land transportation.</p>
+          </div>
+        </article>
 
-            <article class="row g-4 align-items-center border border-secondary p-3 mx-0 bg-black">
-                <figure class="col-md-5 m-0" style="height: 220px;">
-                    <img src="2026.jpg" alt="Modern Sustainable Luxury Fleet" class="img-fluid w-100 h-100" style="object-fit: cover;">
-                </figure>
-                <section class="col-md-7">
-                    <span class="badge border border-secondary text-secondary mb-2 font-monospace">ERA: 2026</span>
-                    <h2 class="h5 text-uppercase fw-bold text-white">The Sustainable Luxury Transition</h2>
-                    <p class="small text-secondary mb-0">Deploying highly efficient digital aerodynamic matrices globally, the brand scales zero-emission electric luxury fleets. The design framework balances carbon neutrality timelines alongside raw performance driving dynamics.</p>
-                </section>
-            </article>
-        </section>
+        <article class="timeline-item rev tilt reveal reveal-r">
+          <figure><img src="1926.jpg" alt="1951 Safety Crumple Zone"></figure>
+          <div class="copy">
+            <span class="badge">ERA: 1951</span>
+            <h2 style="font-size:1.15rem;">The Crumple Zone</h2>
+            <p>B&eacute;la Bar&eacute;nyi introduces the structural crumple zone into mainstream vehicle development — engineering deformable structures around a rigid passenger cell, dramatically improving cabin survival in a collision.</p>
+          </div>
+        </article>
 
-        <fieldset class="border border-secondary p-4">
-            <legend class="float-none w-auto h6 text-uppercase px-2 fw-bold font-monospace text-secondary">Our Corporate Core Values</legend>
-            <section class="row g-4 mt-1 text-center">
-                <article class="col-md-4">
-                    <section class="border border-secondary p-3 h-100 bg-black">
-                        <h3 class="h6 text-uppercase fw-bold text-white mb-2">Meticulous Craftsmanship</h3>
-                        <p class="small text-secondary m-0">Sourcing premium cabin appointments constructed with extreme mechanical precision and strict aesthetic standards.</p>
-                    </section>
-                </article>
-                <article class="col-md-4">
-                    <section class="border border-secondary p-3 h-100 bg-black">
-                        <h3 class="h6 text-uppercase fw-bold text-white mb-2">Predictive Safety</h3>
-                        <p class="small text-secondary m-0">Pioneering real-time driver mitigation networks designed to entirely eradicate accidental collisions across all drive paths.</p>
-                    </section>
-                </article>
-                <article class="col-md-4">
-                    <section class="border border-secondary p-3 h-100 bg-black">
-                        <h3 class="h6 text-uppercase fw-bold text-white mb-2">Ecological Accountability</h3>
-                        <p class="small text-secondary m-0">Enforcing strict carbon neutral supply procurement protocols down every processing avenue via Ambition initiatives.</p>
-                    </section>
-                </article>
-            </section>
-        </fieldset>
-    </main>
+        <article class="timeline-item tilt reveal reveal-l">
+          <figure><img src="2026.jpg" alt="Modern Sustainable Luxury Fleet"></figure>
+          <div class="copy">
+            <span class="badge">ERA: 2026</span>
+            <h2 style="font-size:1.15rem;">The Sustainable Luxury Transition</h2>
+            <p>Deploying highly efficient digital aerodynamics globally, the brand scales zero-emission electric luxury fleets — balancing carbon-neutrality timelines with raw performance.</p>
+          </div>
+        </article>
 
-    <footer class="border-top border-secondary py-4 bg-dark">
-        <section class="container text-center text-secondary small">
-            <p class="m-0">Historical Heritage Matrix Synchronization Fully Executed.</p>
-        </section>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <section class="block" style="padding-top:0;">
+    <div class="container">
+      <div class="panel reveal" style="padding:44px;">
+        <span class="eyebrow">What We Stand For</span>
+        <h2 style="margin-top:.4em;">Corporate Core Values</h2>
+        <div class="grid grid-3" style="margin-top:20px;">
+          <div class="tilt panel" style="text-align:center;">
+            <h3 style="font-size:.95rem;">Meticulous Craftsmanship</h3>
+            <p>Sourcing premium cabin appointments constructed with extreme mechanical precision and strict aesthetic standards.</p>
+          </div>
+          <div class="tilt panel" style="text-align:center;">
+            <h3 style="font-size:.95rem;">Predictive Safety</h3>
+            <p>Pioneering real-time driver mitigation networks designed to eliminate accidental collisions across every drive path.</p>
+          </div>
+          <div class="tilt panel" style="text-align:center;">
+            <h3 style="font-size:.95rem;">Ecological Accountability</h3>
+            <p>Enforcing strict carbon-neutral supply procurement protocols down every processing avenue via our Ambition initiative.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="hud-footer">
+  <div class="container">
+    <div class="foot-bottom">Historical Heritage Matrix Synchronization Fully Executed.</div>
+  </div>
+</footer>
+
+<script src="assets/fx.js"></script>
 </body>
 </html>
