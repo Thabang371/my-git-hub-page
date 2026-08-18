@@ -3,18 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mercedes-Benz — Hero 3D Engineering Core</title>
+<title>Mercedes-Benz — Quantum HUD Engineering Core</title>
 <link rel="icon" href="logo.jfif">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/fx.css">
+<style>
+  /* --- EXTRA CRAZY CYBER-HUD & GLITCH ENHANCEMENTS --- */
+  body::after {
+    content: "";
+    position: fixed; inset: 0;
+    background: linear-gradient(rgba(0, 229, 199, 0.03) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 4px;
+    z-index: 998;
+    pointer-events: none;
+  }
+  .hero-canvas { filter: drop-shadow(0 0 25px rgba(0, 229, 199, 0.4)); }
+  .cyber-glitch-badge {
+    position: relative;
+    display: inline-block;
+    color: var(--teal);
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 2px 0 var(--danger), -2px 0 #00f0ff;
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+  }
+  @keyframes glitch-anim {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(-15deg); filter: blur(1px); }
+    21% { transform: skew(0deg); filter: none; }
+    80% { transform: skew(10deg); }
+    100% { transform: skew(0deg); }
+  }
+  .pulse-ring {
+    position: absolute; border: 1px dashed var(--teal);
+    border-radius: 50%; opacity: 0; pointer-events: none;
+    animation: radar-pulse 4s infinite linear;
+  }
+  @keyframes radar-pulse {
+    0% { width: 0px; height: 0px; opacity: 0.8; transform: translate(-50%, -50%); }
+    100% { width: 600px; height: 600px; opacity: 0; transform: translate(-50%, -50%); }
+  }
+</style>
 </head>
 <body class="bg-dark text-light">
 
 <!-- BOOT SCREEN -->
 <div id="boot">
   <div class="bar"><span></span></div>
-  <p>INITIALIZING HUD CORE...</p>
+  <p>INITIALIZING QUANTUM TELEMETRY &amp; NEURAL MBUX...</p>
 </div>
 
 <header class="hud-nav">
@@ -35,8 +71,8 @@
 </header>
 
 <main>
-  <!-- HERO SECTION WITH 3D CANVAS -->
-  <section class="hero">
+  <!-- HERO SECTION WITH 3D CANVAS & RADAR OVERLAY -->
+  <section class="hero" style="min-height:96vh;">
     <canvas class="hero-canvas" id="hero-canvas"></canvas>
     <div class="hero-scanline"></div>
     
@@ -44,19 +80,40 @@
       <div class="hud-corner tl"></div>
       <div class="hud-corner br"></div>
       <div class="hud-readout">
-        SYS.ON // 3D CORE ACTIVE<br>
+        <span class="cyber-glitch-badge">SYS.QUANTUM // ACTIVE</span><br>
         LAT: 48.7758° N, 9.1829° E<br>
-        RENDER: WEBGL/THREE.JS
+        NEURAL MBUX: SYNCHRONIZED<br>
+        DRAG COEFFICIENT: 0.20 Cd
       </div>
     </div>
 
     <div class="hero-content">
-      <span class="eyebrow">Next-Gen Engineering</span>
-      <h1>Mastering <span class="accent">Motion</span> &amp; Luxury</h1>
-      <p class="hero-lede">Deploying high-performance architecture, intelligent software ecosystems, and precision design metrics into a singular immersive interface.</p>
+      <span class="eyebrow">Autonomous Telemetry Grid</span>
+      <h1>Redefining <span class="accent">Hyper-Velocity</span> Luxury</h1>
+      <p class="hero-lede">Deploying next-generation quantum core wireframes, real-time particle matrix convergence, and adaptive biometric control systems.</p>
       <div style="display:flex; gap:16px; flex-wrap:wrap;">
-        <a href="cars.html" class="btn solid">Explore Showroom</a>
-        <a href="contact.html" class="btn ghost">Book a Test Drive</a>
+        <a href="cars.html" class="btn solid">Launch Showroom</a>
+        <a href="contact.html" class="btn ghost">Initiate Test Drive</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DYNAMIC LIVE TELEMETRY METRICS -->
+  <section class="block" style="padding: 50px 0; border-bottom: 1px solid var(--line);">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="panel tilt stat reveal">
+          <div class="num" data-count="99.9" data-suffix="%">0%</div>
+          <div class="lbl">Neural Core Stability</div>
+        </div>
+        <div class="panel tilt stat reveal">
+          <div class="num" data-count="340" data-suffix="KM/H">0</div>
+          <div class="lbl">Peak Vector Velocity</div>
+        </div>
+        <div class="panel tilt stat reveal">
+          <div class="num" data-count="0.20" data-suffix="Cd">0</div>
+          <div class="lbl">Active Aero Efficiency</div>
+        </div>
       </div>
     </div>
   </section>
@@ -65,21 +122,21 @@
   <section class="block">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Core Capabilities</span>
-        <h2>Engineered for Precision</h2>
+        <span class="eyebrow">Advanced Engineering Matrix</span>
+        <h2>Boundless Technological Edge</h2>
       </div>
       <div class="grid grid-3">
         <article class="panel tilt reveal" style="text-align:center;">
-          <h3 style="font-size:1rem;">Aerodynamics</h3>
-          <p>Optimized digital flow patterns minimizing drag coefficient metrics for pure efficiency.</p>
+          <h3 style="font-size:1rem;">Active Airflow Morphing</h3>
+          <p>Variable aerodynamic panels that dynamically realign surface pressure vectors at high velocities.</p>
         </article>
         <article class="panel tilt reveal" style="text-align:center;">
-          <h3 style="font-size:1rem;">MBUX Intelligence</h3>
-          <p>Neural frameworks and cloud execution layers tailoring cockpit dynamics to user preferences.</p>
+          <h3 style="font-size:1rem;">Solid-State Power Grid</h3>
+          <p>High-density solid-state battery architecture delivering instantaneous torque and unmatched range.</p>
         </article>
         <article class="panel tilt reveal" style="text-align:center;">
-          <h3 style="font-size:1rem;">Safety Architecture</h3>
-          <p>Pioneering structural integrity frameworks and predictive mitigation networks globally.</p>
+          <h3 style="font-size:1rem;">Predictive AI Shield</h3>
+          <p>Millisecond-ahead collision mitigation mapping terrain and trajectories using neural machine learning.</p>
         </article>
       </div>
     </div>
@@ -108,7 +165,7 @@
         </nav>
       </div>
     </div>
-    <div class="foot-bottom">Thabang Lejowa &mdash; my-git-hub-page</div>
+    <div class="foot-bottom">Thabang Lejowa &mdash; my-git-hub-page (Quantum HUD Edition)</div>
   </div>
 </footer>
 
