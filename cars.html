@@ -1,167 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showroom | Mercedes-Benz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .card-image-box {
-            height: 220px;
-            object-fit: cover;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showroom | Mercedes-Benz</title>
+<link rel="icon" href="logo.jfif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fx.css">
 </head>
 <body class="bg-dark text-light">
 
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top py-3">
-        <section class="container">
-            <a class="navbar-brand m-0 p-0" href="index.html">
-                <img src="assets/logo.jfif" alt="Mercedes Logo" width="50">
-            </a>
-            <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-3 gap-lg-4 text-uppercase fs-6 fw-bold flex-column flex-lg-row pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link text-secondary" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="cars.html">Showroom</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="innovation.html">Innovation</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="about.html">Heritage</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="contact.html">Book a Test Drive</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+<header class="hud-nav">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <img src="logo.jfif" alt="Mercedes-Benz">
+      <span>Mercedes&nbsp;Benz</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="hud-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html" class="active">Showroom</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="about.html">Heritage</a></li>
+      <li><a href="contact.html">Book a Test Drive</a></li>
+    </ul>
+  </div>
+</header>
 
-    <main class="container py-5">
-        <header class="text-center mb-5 border border-secondary p-4 bg-black">
-            <h1 class="display-5 fw-bold text-uppercase">Showroom</h1>
-            <p class="text-secondary mb-0">Select a Beast To Test Drive Today.</p>
-        </header>
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Fleet Catalog</span>
+      <h1>Showroom</h1>
+      <p>Select a beast to test drive today. Six variants, each engineered for a different edge of the map.</p>
+    </div>
+  </div>
 
-        <section class="row g-4 align-items-stretch">
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="G63amg.jfif" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">AMG G 63</h3>
-                            <p class="text-secondary small">The Mercedes-AMG G 63 combines military-grade off-road capabilities with supercar performance. Features a handcrafted V8 hybrid engine and highly customizable luxurious interior layout structures.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="Eqs.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">EQS</h3>
-                            <p class="text-secondary small">Features a premium all-electric configuration serving as the absolute pinnacle of luxury EV engineering, complete with full digital cockpit displays and exceptional range profiles.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="c class.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">C-class</h3>
-                            <p class="text-secondary small">The industrial benchmark for premium daily performance matrix execution. Balancing crisp aerodynamic bodily proportions with dynamic street safety architecture.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="assets/gt coupe.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">GT Coupe</h3>
-                            <p class="text-secondary small">Aerodynamic tracking optimization variants systematically engineered with high-torque drivetrain system specifications for intense track stability handling metrics.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="assets/gla.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">GLA</h3>
-                            <p class="text-secondary small">The brand's sleek urban entry asset configuration. Compact profile layouts mixed with high ground clearance properties optimized for multi-terrain execution environments.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
-            
-            <article class="col-md-4">
-                <section class="border border-secondary h-100 p-0 bg-black d-flex flex-column justify-content-between">
-                    <header class="p-0 m-0">
-                        <img src="sl roadstar.jpg" class="img-fluid w-100 border-bottom border-secondary card-image-box" alt="Vehicle Specimen">
-                        <fieldset class="p-4 border-0">
-                            <h3 class="h5 text-uppercase border-bottom border-secondary pb-2">SL ROADSTAR</h3>
-                            <p class="text-secondary small">High-performance grand touring engineering that blends classical soft-top drop deployment mechanics with premium high-velocity 2+2 spatial luxury cabins.</p>
-                        </fieldset>
-                    </header>
-                    <footer class="p-4 pt-0 bg-transparent border-0">
-                        <a href="contact.html" class="btn btn-outline-light btn-sm rounded-0 text-uppercase w-100 font-monospace py-2">Configure Variant</a>
-                    </footer>
-                </section>
-            </article>
+  <section class="block">
+    <div class="container">
+      <div class="grid grid-3">
 
-        </section>
-    </main>
+        <article class="card tilt reveal">
+          <figure><img src="G63amg.jfif" alt="Mercedes-AMG G 63"></figure>
+          <div class="body">
+            <h3>AMG G 63</h3>
+            <p>Military-grade off-road capability meets supercar performance — a handcrafted V8 hybrid engine in a highly customizable luxury interior.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
 
-    <footer class="border-top border-secondary py-5 bg-dark text-secondary text-center small">
-        <section class="container">
-            <section class="row g-4">
-                <article class="col-md-4 border border-secondary p-3">
-                    <h6 class="text-white text-uppercase mb-3">Mercedes-Benz AG</h6>
-                    <p class="mb-0">&copy; 2026 Authorized Dealership Network.<br>All rights reserved globally.</p>
-                </article>
-                <article class="col-md-4 border border-secondary p-3 d-flex flex-column gap-2">
-                    <h6 class="text-white text-uppercase mb-3">Popular Sites</h6>
-                    <a href="index.html" class="text-secondary text-decoration-none">Home</a>
-                    <a href="cars.html" class="text-secondary text-decoration-none">Showroom</a>
-                    <a href="contact.html" class="text-secondary text-decoration-none">Contact</a>
-                </article>
-                <article class="col-md-4 border border-secondary p-3">
-                    <h6 class="text-white text-uppercase mb-3">Connect</h6>
-                    <nav class="d-flex justify-content-center gap-3">
-                        <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="https://x.com/MercedesBenz" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x fs-5"></i></a>
-                        <a href="https://www.youtube.com/@MercedesBenz" target="_blank" class="btn btn-outline-secondary rounded-0 border-secondary text-secondary p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-youtube fs-5"></i></a>
-                    </nav>
-                </article>
-            </section>
-        </section>
-    </footer>
+        <article class="card tilt reveal">
+          <figure><img src="Eqs.jpg" alt="Mercedes EQS"></figure>
+          <div class="body">
+            <h3>EQS</h3>
+            <p>Premium all-electric configuration — the pinnacle of luxury EV engineering, with a full digital cockpit and exceptional range.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <article class="card tilt reveal">
+          <figure><img src="c class.jpg" alt="Mercedes C-Class"></figure>
+          <div class="body">
+            <h3>C-Class</h3>
+            <p>The benchmark for premium daily performance — crisp aerodynamic proportions balanced with dynamic street safety architecture.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
+
+        <article class="card tilt reveal">
+          <figure><img src="gt coupe.jpg" alt="Mercedes-AMG GT Coupe"></figure>
+          <div class="body">
+            <h3>GT Coupe</h3>
+            <p>Aerodynamic tracking optimization, engineered with a high-torque drivetrain for serious track stability metrics.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
+
+        <article class="card tilt reveal">
+          <figure><img src="gla.jpg" alt="Mercedes GLA"></figure>
+          <div class="body">
+            <h3>GLA</h3>
+            <p>The brand's sleek urban entry point — a compact profile paired with high ground clearance for multi-terrain days.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
+
+        <article class="card tilt reveal">
+          <figure><img src="sl roadstar.jpg" alt="Mercedes SL Roadster"></figure>
+          <div class="body">
+            <h3>SL Roadster</h3>
+            <p>Grand touring engineering that blends classical soft-top mechanics with a high-velocity 2+2 luxury cabin.</p>
+          </div>
+          <div class="foot"><a href="contact.html" class="btn ghost block">Configure Variant</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="hud-footer">
+  <div class="container">
+    <div class="grid grid-3">
+      <div>
+        <h6>Mercedes-Benz AG</h6>
+        <p class="mono" style="font-size:.8rem;">&copy; 2026 Authorized Dealership Network.<br>All rights reserved globally.</p>
+      </div>
+      <div>
+        <h6>Popular Sites</h6>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Showroom</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h6>Connect</h6>
+        <nav class="social">
+          <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank" rel="noopener">IG</a>
+          <a href="https://x.com/MercedesBenz" target="_blank" rel="noopener">X</a>
+          <a href="https://www.youtube.com/@MercedesBenz" target="_blank" rel="noopener">YT</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">Thabang Lejowa &mdash; my-git-hub-page</div>
+  </div>
+</footer>
+
+<script src="assets/fx.js"></script>
 </body>
 </html>
